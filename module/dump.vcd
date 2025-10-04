@@ -1,0 +1,4043 @@
+$date
+	Fri Oct  3 16:58:09 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module vsdbabysoc_tb $end
+$var reg 1 ! ENb_CP $end
+$var reg 1 " ENb_VCO $end
+$var reg 1 # REF $end
+$var reg 1 $ VCO_IN $end
+$var reg 1 % reset $end
+$var real 1 & VREFH $end
+$var real 1 ' VREFL $end
+$var real 1 ( OUT $end
+$scope module uut $end
+$var wire 1 ! ENb_CP $end
+$var wire 1 " ENb_VCO $end
+$var wire 1 # REF $end
+$var wire 1 $ VCO_IN $end
+$var wire 1 ) VREFH $end
+$var wire 1 % reset $end
+$var wire 10 * RV_TO_DAC [9:0] $end
+$var wire 1 + OUT $end
+$var wire 1 , CLK $end
+$scope module core $end
+$var wire 32 - CPU_dmem_rd_data_a4 [31:0] $end
+$var wire 1 . CPU_dmem_rd_en_a4 $end
+$var wire 1 / CPU_dmem_wr_en_a4 $end
+$var wire 1 0 CPU_funct3_valid_a1 $end
+$var wire 1 1 CPU_funct7_valid_a1 $end
+$var wire 32 2 CPU_instr_a1 [31:0] $end
+$var wire 1 3 CPU_is_i_instr_a1 $end
+$var wire 1 4 CPU_is_jump_a1 $end
+$var wire 1 5 CPU_is_r_instr_a1 $end
+$var wire 1 6 CPU_is_s_instr_a1 $end
+$var wire 1 7 CPU_is_u_instr_a1 $end
+$var wire 32 8 CPU_ld_data_a5 [31:0] $end
+$var wire 1 9 CPU_rd_valid_a1 $end
+$var wire 1 : CPU_reset_a0 $end
+$var wire 32 ; CPU_rf_rd_data1_a2 [31:0] $end
+$var wire 32 < CPU_rf_rd_data2_a2 [31:0] $end
+$var wire 1 = CPU_rf_rd_en1_a2 $end
+$var wire 1 > CPU_rf_rd_en2_a2 $end
+$var wire 5 ? CPU_rf_rd_index1_a2 [4:0] $end
+$var wire 5 @ CPU_rf_rd_index2_a2 [4:0] $end
+$var wire 1 A CPU_rf_wr_en_a3 $end
+$var wire 1 B CPU_rs1_valid_a1 $end
+$var wire 1 C CPU_rs2_valid_a1 $end
+$var wire 1 D CPU_valid_jump_a3 $end
+$var wire 1 E CPU_valid_load_a3 $end
+$var wire 1 F CPU_valid_taken_br_a3 $end
+$var wire 1 % reset $end
+$var wire 1 G clkP_CPU_rs2_valid_a2 $end
+$var wire 1 H clkP_CPU_rs1_valid_a2 $end
+$var wire 1 I clkP_CPU_rd_valid_a5 $end
+$var wire 1 J clkP_CPU_rd_valid_a4 $end
+$var wire 1 K clkP_CPU_rd_valid_a3 $end
+$var wire 1 L clkP_CPU_rd_valid_a2 $end
+$var wire 1 M clkP_CPU_dmem_rd_en_a5 $end
+$var wire 1 , clk $end
+$var wire 1 N CPU_valid_a3 $end
+$var wire 1 O CPU_taken_br_a3 $end
+$var wire 32 P CPU_src2_value_a2 [31:0] $end
+$var wire 32 Q CPU_src1_value_a2 [31:0] $end
+$var wire 1 R CPU_sltu_result_a3 $end
+$var wire 1 S CPU_sltiu_result_a3 $end
+$var wire 5 T CPU_rs2_a1 [4:0] $end
+$var wire 5 U CPU_rs1_a1 [4:0] $end
+$var wire 5 V CPU_rf_wr_index_a3 [4:0] $end
+$var wire 32 W CPU_rf_wr_data_a3 [31:0] $end
+$var wire 32 X CPU_result_a3 [31:0] $end
+$var wire 5 Y CPU_rd_a1 [4:0] $end
+$var wire 32 Z CPU_pc_a0 [31:0] $end
+$var wire 7 [ CPU_opcode_a1 [6:0] $end
+$var wire 32 \ CPU_jalr_tgt_pc_a2 [31:0] $end
+$var wire 1 ] CPU_is_xori_a1 $end
+$var wire 1 ^ CPU_is_xor_a1 $end
+$var wire 1 _ CPU_is_sw_a1 $end
+$var wire 1 ` CPU_is_sub_a1 $end
+$var wire 1 a CPU_is_srli_a1 $end
+$var wire 1 b CPU_is_srl_a1 $end
+$var wire 1 c CPU_is_srai_a1 $end
+$var wire 1 d CPU_is_sra_a1 $end
+$var wire 1 e CPU_is_sltu_a1 $end
+$var wire 1 f CPU_is_sltiu_a1 $end
+$var wire 1 g CPU_is_slti_a1 $end
+$var wire 1 h CPU_is_slt_a1 $end
+$var wire 1 i CPU_is_slli_a1 $end
+$var wire 1 j CPU_is_sll_a1 $end
+$var wire 1 k CPU_is_sh_a1 $end
+$var wire 1 l CPU_is_sb_a1 $end
+$var wire 1 m CPU_is_ori_a1 $end
+$var wire 1 n CPU_is_or_a1 $end
+$var wire 1 o CPU_is_lui_a1 $end
+$var wire 1 p CPU_is_load_a1 $end
+$var wire 1 q CPU_is_jalr_a1 $end
+$var wire 1 r CPU_is_jal_a1 $end
+$var wire 1 s CPU_is_j_instr_a1 $end
+$var wire 1 t CPU_is_bne_a1 $end
+$var wire 1 u CPU_is_bltu_a1 $end
+$var wire 1 v CPU_is_blt_a1 $end
+$var wire 1 w CPU_is_bgeu_a1 $end
+$var wire 1 x CPU_is_bge_a1 $end
+$var wire 1 y CPU_is_beq_a1 $end
+$var wire 1 z CPU_is_b_instr_a1 $end
+$var wire 1 { CPU_is_auipc_a1 $end
+$var wire 1 | CPU_is_andi_a1 $end
+$var wire 1 } CPU_is_and_a1 $end
+$var wire 1 ~ CPU_is_addi_a1 $end
+$var wire 1 !" CPU_is_add_a1 $end
+$var wire 32 "" CPU_inc_pc_a1 [31:0] $end
+$var wire 32 #" CPU_imm_a1 [31:0] $end
+$var wire 1 $" CPU_imem_rd_en_a0 $end
+$var wire 32 %" CPU_imem_rd_data_a1 [31:0] $end
+$var wire 32 &" CPU_imem_rd_addr_a0 [31:0] $end
+$var wire 7 '" CPU_funct7_a1 [6:0] $end
+$var wire 3 (" CPU_funct3_a1 [2:0] $end
+$var wire 32 )" CPU_dmem_wr_data_a4 [31:0] $end
+$var wire 4 *" CPU_dmem_addr_a4 [3:0] $end
+$var wire 11 +" CPU_dec_bits_a1 [10:0] $end
+$var wire 32 ," CPU_br_tgt_pc_a2 [31:0] $end
+$var reg 32 -" CPU_br_tgt_pc_a3 [31:0] $end
+$var reg 32 ." CPU_dmem_rd_data_a5 [31:0] $end
+$var reg 32 /" CPU_imem_rd_addr_a1 [31:0] $end
+$var reg 1 0" CPU_imem_rd_en_a1 $end
+$var reg 32 1" CPU_imm_a2 [31:0] $end
+$var reg 32 2" CPU_imm_a3 [31:0] $end
+$var reg 32 3" CPU_inc_pc_a2 [31:0] $end
+$var reg 32 4" CPU_inc_pc_a3 [31:0] $end
+$var reg 1 5" CPU_is_add_a2 $end
+$var reg 1 6" CPU_is_add_a3 $end
+$var reg 1 7" CPU_is_addi_a2 $end
+$var reg 1 8" CPU_is_addi_a3 $end
+$var reg 1 9" CPU_is_and_a2 $end
+$var reg 1 :" CPU_is_and_a3 $end
+$var reg 1 ;" CPU_is_andi_a2 $end
+$var reg 1 <" CPU_is_andi_a3 $end
+$var reg 1 =" CPU_is_auipc_a2 $end
+$var reg 1 >" CPU_is_auipc_a3 $end
+$var reg 1 ?" CPU_is_beq_a2 $end
+$var reg 1 @" CPU_is_beq_a3 $end
+$var reg 1 A" CPU_is_beq_a4 $end
+$var reg 1 B" CPU_is_beq_a5 $end
+$var reg 1 C" CPU_is_bge_a2 $end
+$var reg 1 D" CPU_is_bge_a3 $end
+$var reg 1 E" CPU_is_bge_a4 $end
+$var reg 1 F" CPU_is_bge_a5 $end
+$var reg 1 G" CPU_is_bgeu_a2 $end
+$var reg 1 H" CPU_is_bgeu_a3 $end
+$var reg 1 I" CPU_is_bgeu_a4 $end
+$var reg 1 J" CPU_is_bgeu_a5 $end
+$var reg 1 K" CPU_is_blt_a2 $end
+$var reg 1 L" CPU_is_blt_a3 $end
+$var reg 1 M" CPU_is_blt_a4 $end
+$var reg 1 N" CPU_is_blt_a5 $end
+$var reg 1 O" CPU_is_bltu_a2 $end
+$var reg 1 P" CPU_is_bltu_a3 $end
+$var reg 1 Q" CPU_is_bltu_a4 $end
+$var reg 1 R" CPU_is_bltu_a5 $end
+$var reg 1 S" CPU_is_bne_a2 $end
+$var reg 1 T" CPU_is_bne_a3 $end
+$var reg 1 U" CPU_is_bne_a4 $end
+$var reg 1 V" CPU_is_bne_a5 $end
+$var reg 1 W" CPU_is_jal_a2 $end
+$var reg 1 X" CPU_is_jal_a3 $end
+$var reg 1 Y" CPU_is_jalr_a2 $end
+$var reg 1 Z" CPU_is_jalr_a3 $end
+$var reg 1 [" CPU_is_jump_a2 $end
+$var reg 1 \" CPU_is_jump_a3 $end
+$var reg 1 ]" CPU_is_load_a2 $end
+$var reg 1 ^" CPU_is_load_a3 $end
+$var reg 1 _" CPU_is_lui_a2 $end
+$var reg 1 `" CPU_is_lui_a3 $end
+$var reg 1 a" CPU_is_or_a2 $end
+$var reg 1 b" CPU_is_or_a3 $end
+$var reg 1 c" CPU_is_ori_a2 $end
+$var reg 1 d" CPU_is_ori_a3 $end
+$var reg 1 e" CPU_is_s_instr_a2 $end
+$var reg 1 f" CPU_is_s_instr_a3 $end
+$var reg 1 g" CPU_is_s_instr_a4 $end
+$var reg 1 h" CPU_is_sb_a2 $end
+$var reg 1 i" CPU_is_sb_a3 $end
+$var reg 1 j" CPU_is_sb_a4 $end
+$var reg 1 k" CPU_is_sb_a5 $end
+$var reg 1 l" CPU_is_sh_a2 $end
+$var reg 1 m" CPU_is_sh_a3 $end
+$var reg 1 n" CPU_is_sh_a4 $end
+$var reg 1 o" CPU_is_sh_a5 $end
+$var reg 1 p" CPU_is_sll_a2 $end
+$var reg 1 q" CPU_is_sll_a3 $end
+$var reg 1 r" CPU_is_slli_a2 $end
+$var reg 1 s" CPU_is_slli_a3 $end
+$var reg 1 t" CPU_is_slt_a2 $end
+$var reg 1 u" CPU_is_slt_a3 $end
+$var reg 1 v" CPU_is_slti_a2 $end
+$var reg 1 w" CPU_is_slti_a3 $end
+$var reg 1 x" CPU_is_sltiu_a2 $end
+$var reg 1 y" CPU_is_sltiu_a3 $end
+$var reg 1 z" CPU_is_sltu_a2 $end
+$var reg 1 {" CPU_is_sltu_a3 $end
+$var reg 1 |" CPU_is_sra_a2 $end
+$var reg 1 }" CPU_is_sra_a3 $end
+$var reg 1 ~" CPU_is_srai_a2 $end
+$var reg 1 !# CPU_is_srai_a3 $end
+$var reg 1 "# CPU_is_srl_a2 $end
+$var reg 1 ## CPU_is_srl_a3 $end
+$var reg 1 $# CPU_is_srli_a2 $end
+$var reg 1 %# CPU_is_srli_a3 $end
+$var reg 1 &# CPU_is_sub_a2 $end
+$var reg 1 '# CPU_is_sub_a3 $end
+$var reg 1 (# CPU_is_sw_a2 $end
+$var reg 1 )# CPU_is_sw_a3 $end
+$var reg 1 *# CPU_is_sw_a4 $end
+$var reg 1 +# CPU_is_sw_a5 $end
+$var reg 1 ,# CPU_is_xor_a2 $end
+$var reg 1 -# CPU_is_xor_a3 $end
+$var reg 1 .# CPU_is_xori_a2 $end
+$var reg 1 /# CPU_is_xori_a3 $end
+$var reg 32 0# CPU_jalr_tgt_pc_a3 [31:0] $end
+$var reg 32 1# CPU_pc_a1 [31:0] $end
+$var reg 32 2# CPU_pc_a2 [31:0] $end
+$var reg 32 3# CPU_pc_a3 [31:0] $end
+$var reg 5 4# CPU_rd_a2 [4:0] $end
+$var reg 5 5# CPU_rd_a3 [4:0] $end
+$var reg 5 6# CPU_rd_a4 [4:0] $end
+$var reg 5 7# CPU_rd_a5 [4:0] $end
+$var reg 1 8# CPU_rd_valid_a2 $end
+$var reg 1 9# CPU_rd_valid_a3 $end
+$var reg 1 :# CPU_rd_valid_a4 $end
+$var reg 1 ;# CPU_reset_a1 $end
+$var reg 1 <# CPU_reset_a2 $end
+$var reg 1 =# CPU_reset_a3 $end
+$var reg 1 ># CPU_reset_a4 $end
+$var reg 4 ?# CPU_result_a4 [5:2] $end
+$var reg 5 @# CPU_rs1_a2 [4:0] $end
+$var reg 1 A# CPU_rs1_valid_a2 $end
+$var reg 5 B# CPU_rs2_a2 [4:0] $end
+$var reg 1 C# CPU_rs2_valid_a2 $end
+$var reg 32 D# CPU_src1_value_a3 [31:0] $end
+$var reg 32 E# CPU_src2_value_a3 [31:0] $end
+$var reg 32 F# CPU_src2_value_a4 [31:0] $end
+$var reg 1 G# CPU_valid_a4 $end
+$var reg 1 H# CPU_valid_jump_a4 $end
+$var reg 1 I# CPU_valid_jump_a5 $end
+$var reg 1 J# CPU_valid_load_a4 $end
+$var reg 1 K# CPU_valid_load_a5 $end
+$var reg 1 L# CPU_valid_taken_br_a4 $end
+$var reg 1 M# CPU_valid_taken_br_a5 $end
+$var reg 10 N# out [9:0] $end
+$scope begin L1_CPU_Dmem[0] $end
+$var wire 1 O# L1_wr_a4 $end
+$var parameter 2 P# dmem $end
+$upscope $end
+$scope begin L1_CPU_Dmem[1] $end
+$var wire 1 Q# L1_wr_a4 $end
+$var parameter 2 R# dmem $end
+$upscope $end
+$scope begin L1_CPU_Dmem[2] $end
+$var wire 1 S# L1_wr_a4 $end
+$var parameter 3 T# dmem $end
+$upscope $end
+$scope begin L1_CPU_Dmem[3] $end
+$var wire 1 U# L1_wr_a4 $end
+$var parameter 3 V# dmem $end
+$upscope $end
+$scope begin L1_CPU_Dmem[4] $end
+$var wire 1 W# L1_wr_a4 $end
+$var parameter 4 X# dmem $end
+$upscope $end
+$scope begin L1_CPU_Dmem[5] $end
+$var wire 1 Y# L1_wr_a4 $end
+$var parameter 4 Z# dmem $end
+$upscope $end
+$scope begin L1_CPU_Dmem[6] $end
+$var wire 1 [# L1_wr_a4 $end
+$var parameter 4 \# dmem $end
+$upscope $end
+$scope begin L1_CPU_Dmem[7] $end
+$var wire 1 ]# L1_wr_a4 $end
+$var parameter 4 ^# dmem $end
+$upscope $end
+$scope begin L1_CPU_Dmem[8] $end
+$var wire 1 _# L1_wr_a4 $end
+$var parameter 5 `# dmem $end
+$upscope $end
+$scope begin L1_CPU_Dmem[9] $end
+$var wire 1 a# L1_wr_a4 $end
+$var parameter 5 b# dmem $end
+$upscope $end
+$scope begin L1_CPU_Dmem[10] $end
+$var wire 1 c# L1_wr_a4 $end
+$var parameter 5 d# dmem $end
+$upscope $end
+$scope begin L1_CPU_Dmem[11] $end
+$var wire 1 e# L1_wr_a4 $end
+$var parameter 5 f# dmem $end
+$upscope $end
+$scope begin L1_CPU_Dmem[12] $end
+$var wire 1 g# L1_wr_a4 $end
+$var parameter 5 h# dmem $end
+$upscope $end
+$scope begin L1_CPU_Dmem[13] $end
+$var wire 1 i# L1_wr_a4 $end
+$var parameter 5 j# dmem $end
+$upscope $end
+$scope begin L1_CPU_Dmem[14] $end
+$var wire 1 k# L1_wr_a4 $end
+$var parameter 5 l# dmem $end
+$upscope $end
+$scope begin L1_CPU_Dmem[15] $end
+$var wire 1 m# L1_wr_a4 $end
+$var parameter 5 n# dmem $end
+$upscope $end
+$scope begin L1_CPU_Imem[0] $end
+$var parameter 2 o# imem $end
+$upscope $end
+$scope begin L1_CPU_Imem[1] $end
+$var parameter 2 p# imem $end
+$upscope $end
+$scope begin L1_CPU_Imem[2] $end
+$var parameter 3 q# imem $end
+$upscope $end
+$scope begin L1_CPU_Imem[3] $end
+$var parameter 3 r# imem $end
+$upscope $end
+$scope begin L1_CPU_Imem[4] $end
+$var parameter 4 s# imem $end
+$upscope $end
+$scope begin L1_CPU_Imem[5] $end
+$var parameter 4 t# imem $end
+$upscope $end
+$scope begin L1_CPU_Imem[6] $end
+$var parameter 4 u# imem $end
+$upscope $end
+$scope begin L1_CPU_Imem[7] $end
+$var parameter 4 v# imem $end
+$upscope $end
+$scope begin L1_CPU_Imem[8] $end
+$var parameter 5 w# imem $end
+$upscope $end
+$scope begin L1_CPU_Imem[9] $end
+$var parameter 5 x# imem $end
+$upscope $end
+$scope begin L1_CPU_Imem[10] $end
+$var parameter 5 y# imem $end
+$upscope $end
+$scope begin L1_CPU_Imem[11] $end
+$var parameter 5 z# imem $end
+$upscope $end
+$scope begin L1_CPU_Xreg[0] $end
+$var wire 1 {# L1_wr_a3 $end
+$var parameter 2 |# xreg $end
+$upscope $end
+$scope begin L1_CPU_Xreg[1] $end
+$var wire 1 }# L1_wr_a3 $end
+$var parameter 2 ~# xreg $end
+$upscope $end
+$scope begin L1_CPU_Xreg[2] $end
+$var wire 1 !$ L1_wr_a3 $end
+$var parameter 3 "$ xreg $end
+$upscope $end
+$scope begin L1_CPU_Xreg[3] $end
+$var wire 1 #$ L1_wr_a3 $end
+$var parameter 3 $$ xreg $end
+$upscope $end
+$scope begin L1_CPU_Xreg[4] $end
+$var wire 1 %$ L1_wr_a3 $end
+$var parameter 4 &$ xreg $end
+$upscope $end
+$scope begin L1_CPU_Xreg[5] $end
+$var wire 1 '$ L1_wr_a3 $end
+$var parameter 4 ($ xreg $end
+$upscope $end
+$scope begin L1_CPU_Xreg[6] $end
+$var wire 1 )$ L1_wr_a3 $end
+$var parameter 4 *$ xreg $end
+$upscope $end
+$scope begin L1_CPU_Xreg[7] $end
+$var wire 1 +$ L1_wr_a3 $end
+$var parameter 4 ,$ xreg $end
+$upscope $end
+$scope begin L1_CPU_Xreg[8] $end
+$var wire 1 -$ L1_wr_a3 $end
+$var parameter 5 .$ xreg $end
+$upscope $end
+$scope begin L1_CPU_Xreg[9] $end
+$var wire 1 /$ L1_wr_a3 $end
+$var parameter 5 0$ xreg $end
+$upscope $end
+$scope begin L1_CPU_Xreg[10] $end
+$var wire 1 1$ L1_wr_a3 $end
+$var parameter 5 2$ xreg $end
+$upscope $end
+$scope begin L1_CPU_Xreg[11] $end
+$var wire 1 3$ L1_wr_a3 $end
+$var parameter 5 4$ xreg $end
+$upscope $end
+$scope begin L1_CPU_Xreg[12] $end
+$var wire 1 5$ L1_wr_a3 $end
+$var parameter 5 6$ xreg $end
+$upscope $end
+$scope begin L1_CPU_Xreg[13] $end
+$var wire 1 7$ L1_wr_a3 $end
+$var parameter 5 8$ xreg $end
+$upscope $end
+$scope begin L1_CPU_Xreg[14] $end
+$var wire 1 9$ L1_wr_a3 $end
+$var parameter 5 :$ xreg $end
+$upscope $end
+$scope begin L1_CPU_Xreg[15] $end
+$var wire 1 ;$ L1_wr_a3 $end
+$var parameter 5 <$ xreg $end
+$upscope $end
+$scope begin L1_CPU_Xreg[16] $end
+$var wire 1 =$ L1_wr_a3 $end
+$var parameter 6 >$ xreg $end
+$upscope $end
+$scope begin L1_CPU_Xreg[17] $end
+$var wire 1 ?$ L1_wr_a3 $end
+$var parameter 6 @$ xreg $end
+$upscope $end
+$scope begin L1_CPU_Xreg[18] $end
+$var wire 1 A$ L1_wr_a3 $end
+$var parameter 6 B$ xreg $end
+$upscope $end
+$scope begin L1_CPU_Xreg[19] $end
+$var wire 1 C$ L1_wr_a3 $end
+$var parameter 6 D$ xreg $end
+$upscope $end
+$scope begin L1_CPU_Xreg[20] $end
+$var wire 1 E$ L1_wr_a3 $end
+$var parameter 6 F$ xreg $end
+$upscope $end
+$scope begin L1_CPU_Xreg[21] $end
+$var wire 1 G$ L1_wr_a3 $end
+$var parameter 6 H$ xreg $end
+$upscope $end
+$scope begin L1_CPU_Xreg[22] $end
+$var wire 1 I$ L1_wr_a3 $end
+$var parameter 6 J$ xreg $end
+$upscope $end
+$scope begin L1_CPU_Xreg[23] $end
+$var wire 1 K$ L1_wr_a3 $end
+$var parameter 6 L$ xreg $end
+$upscope $end
+$scope begin L1_CPU_Xreg[24] $end
+$var wire 1 M$ L1_wr_a3 $end
+$var parameter 6 N$ xreg $end
+$upscope $end
+$scope begin L1_CPU_Xreg[25] $end
+$var wire 1 O$ L1_wr_a3 $end
+$var parameter 6 P$ xreg $end
+$upscope $end
+$scope begin L1_CPU_Xreg[26] $end
+$var wire 1 Q$ L1_wr_a3 $end
+$var parameter 6 R$ xreg $end
+$upscope $end
+$scope begin L1_CPU_Xreg[27] $end
+$var wire 1 S$ L1_wr_a3 $end
+$var parameter 6 T$ xreg $end
+$upscope $end
+$scope begin L1_CPU_Xreg[28] $end
+$var wire 1 U$ L1_wr_a3 $end
+$var parameter 6 V$ xreg $end
+$upscope $end
+$scope begin L1_CPU_Xreg[29] $end
+$var wire 1 W$ L1_wr_a3 $end
+$var parameter 6 X$ xreg $end
+$upscope $end
+$scope begin L1_CPU_Xreg[30] $end
+$var wire 1 Y$ L1_wr_a3 $end
+$var parameter 6 Z$ xreg $end
+$upscope $end
+$scope begin L1_CPU_Xreg[31] $end
+$var wire 1 [$ L1_wr_a3 $end
+$var parameter 6 \$ xreg $end
+$upscope $end
+$scope begin L1gen_CPU_Dmem[0] $end
+$var parameter 2 ]$ dmem $end
+$upscope $end
+$scope begin L1gen_CPU_Dmem[1] $end
+$var parameter 2 ^$ dmem $end
+$upscope $end
+$scope begin L1gen_CPU_Dmem[2] $end
+$var parameter 3 _$ dmem $end
+$upscope $end
+$scope begin L1gen_CPU_Dmem[3] $end
+$var parameter 3 `$ dmem $end
+$upscope $end
+$scope begin L1gen_CPU_Dmem[4] $end
+$var parameter 4 a$ dmem $end
+$upscope $end
+$scope begin L1gen_CPU_Dmem[5] $end
+$var parameter 4 b$ dmem $end
+$upscope $end
+$scope begin L1gen_CPU_Dmem[6] $end
+$var parameter 4 c$ dmem $end
+$upscope $end
+$scope begin L1gen_CPU_Dmem[7] $end
+$var parameter 4 d$ dmem $end
+$upscope $end
+$scope begin L1gen_CPU_Dmem[8] $end
+$var parameter 5 e$ dmem $end
+$upscope $end
+$scope begin L1gen_CPU_Dmem[9] $end
+$var parameter 5 f$ dmem $end
+$upscope $end
+$scope begin L1gen_CPU_Dmem[10] $end
+$var parameter 5 g$ dmem $end
+$upscope $end
+$scope begin L1gen_CPU_Dmem[11] $end
+$var parameter 5 h$ dmem $end
+$upscope $end
+$scope begin L1gen_CPU_Dmem[12] $end
+$var parameter 5 i$ dmem $end
+$upscope $end
+$scope begin L1gen_CPU_Dmem[13] $end
+$var parameter 5 j$ dmem $end
+$upscope $end
+$scope begin L1gen_CPU_Dmem[14] $end
+$var parameter 5 k$ dmem $end
+$upscope $end
+$scope begin L1gen_CPU_Dmem[15] $end
+$var parameter 5 l$ dmem $end
+$upscope $end
+$scope begin L1gen_CPU_Xreg[0] $end
+$var parameter 2 m$ xreg $end
+$upscope $end
+$scope begin L1gen_CPU_Xreg[1] $end
+$var parameter 2 n$ xreg $end
+$upscope $end
+$scope begin L1gen_CPU_Xreg[2] $end
+$var parameter 3 o$ xreg $end
+$upscope $end
+$scope begin L1gen_CPU_Xreg[3] $end
+$var parameter 3 p$ xreg $end
+$upscope $end
+$scope begin L1gen_CPU_Xreg[4] $end
+$var parameter 4 q$ xreg $end
+$upscope $end
+$scope begin L1gen_CPU_Xreg[5] $end
+$var parameter 4 r$ xreg $end
+$upscope $end
+$scope begin L1gen_CPU_Xreg[6] $end
+$var parameter 4 s$ xreg $end
+$upscope $end
+$scope begin L1gen_CPU_Xreg[7] $end
+$var parameter 4 t$ xreg $end
+$upscope $end
+$scope begin L1gen_CPU_Xreg[8] $end
+$var parameter 5 u$ xreg $end
+$upscope $end
+$scope begin L1gen_CPU_Xreg[9] $end
+$var parameter 5 v$ xreg $end
+$upscope $end
+$scope begin L1gen_CPU_Xreg[10] $end
+$var parameter 5 w$ xreg $end
+$upscope $end
+$scope begin L1gen_CPU_Xreg[11] $end
+$var parameter 5 x$ xreg $end
+$upscope $end
+$scope begin L1gen_CPU_Xreg[12] $end
+$var parameter 5 y$ xreg $end
+$upscope $end
+$scope begin L1gen_CPU_Xreg[13] $end
+$var parameter 5 z$ xreg $end
+$upscope $end
+$scope begin L1gen_CPU_Xreg[14] $end
+$var parameter 5 {$ xreg $end
+$upscope $end
+$scope begin L1gen_CPU_Xreg[15] $end
+$var parameter 5 |$ xreg $end
+$upscope $end
+$scope begin L1gen_CPU_Xreg[16] $end
+$var parameter 6 }$ xreg $end
+$upscope $end
+$scope begin L1gen_CPU_Xreg[17] $end
+$var parameter 6 ~$ xreg $end
+$upscope $end
+$scope begin L1gen_CPU_Xreg[18] $end
+$var parameter 6 !% xreg $end
+$upscope $end
+$scope begin L1gen_CPU_Xreg[19] $end
+$var parameter 6 "% xreg $end
+$upscope $end
+$scope begin L1gen_CPU_Xreg[20] $end
+$var parameter 6 #% xreg $end
+$upscope $end
+$scope begin L1gen_CPU_Xreg[21] $end
+$var parameter 6 $% xreg $end
+$upscope $end
+$scope begin L1gen_CPU_Xreg[22] $end
+$var parameter 6 %% xreg $end
+$upscope $end
+$scope begin L1gen_CPU_Xreg[23] $end
+$var parameter 6 &% xreg $end
+$upscope $end
+$scope begin L1gen_CPU_Xreg[24] $end
+$var parameter 6 '% xreg $end
+$upscope $end
+$scope begin L1gen_CPU_Xreg[25] $end
+$var parameter 6 (% xreg $end
+$upscope $end
+$scope begin L1gen_CPU_Xreg[26] $end
+$var parameter 6 )% xreg $end
+$upscope $end
+$scope begin L1gen_CPU_Xreg[27] $end
+$var parameter 6 *% xreg $end
+$upscope $end
+$scope begin L1gen_CPU_Xreg[28] $end
+$var parameter 6 +% xreg $end
+$upscope $end
+$scope begin L1gen_CPU_Xreg[29] $end
+$var parameter 6 ,% xreg $end
+$upscope $end
+$scope begin L1gen_CPU_Xreg[30] $end
+$var parameter 6 -% xreg $end
+$upscope $end
+$scope begin L1gen_CPU_Xreg[31] $end
+$var parameter 6 .% xreg $end
+$upscope $end
+$scope module gen_clkP_CPU_dmem_rd_en_a5 $end
+$var wire 1 /% func_en $end
+$var wire 1 M gated_clk $end
+$var wire 1 0% gating_override $end
+$var wire 1 . pwr_en $end
+$var wire 1 , free_clk $end
+$upscope $end
+$scope module gen_clkP_CPU_rd_valid_a2 $end
+$var wire 1 1% func_en $end
+$var wire 1 L gated_clk $end
+$var wire 1 2% gating_override $end
+$var wire 1 9 pwr_en $end
+$var wire 1 , free_clk $end
+$upscope $end
+$scope module gen_clkP_CPU_rd_valid_a3 $end
+$var wire 1 3% func_en $end
+$var wire 1 K gated_clk $end
+$var wire 1 4% gating_override $end
+$var wire 1 8# pwr_en $end
+$var wire 1 , free_clk $end
+$upscope $end
+$scope module gen_clkP_CPU_rd_valid_a4 $end
+$var wire 1 5% func_en $end
+$var wire 1 J gated_clk $end
+$var wire 1 6% gating_override $end
+$var wire 1 9# pwr_en $end
+$var wire 1 , free_clk $end
+$upscope $end
+$scope module gen_clkP_CPU_rd_valid_a5 $end
+$var wire 1 7% func_en $end
+$var wire 1 I gated_clk $end
+$var wire 1 8% gating_override $end
+$var wire 1 :# pwr_en $end
+$var wire 1 , free_clk $end
+$upscope $end
+$scope module gen_clkP_CPU_rs1_valid_a2 $end
+$var wire 1 9% func_en $end
+$var wire 1 H gated_clk $end
+$var wire 1 :% gating_override $end
+$var wire 1 B pwr_en $end
+$var wire 1 , free_clk $end
+$upscope $end
+$scope module gen_clkP_CPU_rs2_valid_a2 $end
+$var wire 1 ;% func_en $end
+$var wire 1 G gated_clk $end
+$var wire 1 <% gating_override $end
+$var wire 1 C pwr_en $end
+$var wire 1 , free_clk $end
+$upscope $end
+$upscope $end
+$scope module dac $end
+$var wire 10 =% D [9:0] $end
+$var wire 1 >% EN $end
+$var wire 11 ?% Dext [10:0] $end
+$var real 1 @% NaN $end
+$var real 1 A% OUT $end
+$var real 1 B% VREFH $end
+$var real 1 C% VREFL $end
+$upscope $end
+$scope module pll $end
+$var wire 1 ! ENb_CP $end
+$var wire 1 " ENb_VCO $end
+$var wire 1 # REF $end
+$var wire 1 $ VCO_IN $end
+$var reg 1 , CLK $end
+$var real 1 D% lastedge $end
+$var real 1 E% period $end
+$var real 1 F% refpd $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b11111 .%
+b11110 -%
+b11101 ,%
+b11100 +%
+b11011 *%
+b11010 )%
+b11001 (%
+b11000 '%
+b10111 &%
+b10110 %%
+b10101 $%
+b10100 #%
+b10011 "%
+b10010 !%
+b10001 ~$
+b10000 }$
+b1111 |$
+b1110 {$
+b1101 z$
+b1100 y$
+b1011 x$
+b1010 w$
+b1001 v$
+b1000 u$
+b111 t$
+b110 s$
+b101 r$
+b100 q$
+b11 p$
+b10 o$
+b1 n$
+b0 m$
+b1111 l$
+b1110 k$
+b1101 j$
+b1100 i$
+b1011 h$
+b1010 g$
+b1001 f$
+b1000 e$
+b111 d$
+b110 c$
+b101 b$
+b100 a$
+b11 `$
+b10 _$
+b1 ^$
+b0 ]$
+b11111 \$
+b11110 Z$
+b11101 X$
+b11100 V$
+b11011 T$
+b11010 R$
+b11001 P$
+b11000 N$
+b10111 L$
+b10110 J$
+b10101 H$
+b10100 F$
+b10011 D$
+b10010 B$
+b10001 @$
+b10000 >$
+b1111 <$
+b1110 :$
+b1101 8$
+b1100 6$
+b1011 4$
+b1010 2$
+b1001 0$
+b1000 .$
+b111 ,$
+b110 *$
+b101 ($
+b100 &$
+b11 $$
+b10 "$
+b1 ~#
+b0 |#
+b1011 z#
+b1010 y#
+b1001 x#
+b1000 w#
+b111 v#
+b110 u#
+b101 t#
+b100 s#
+b11 r#
+b10 q#
+b1 p#
+b0 o#
+b1111 n#
+b1110 l#
+b1101 j#
+b1100 h#
+b1011 f#
+b1010 d#
+b1001 b#
+b1000 `#
+b111 ^#
+b110 \#
+b101 Z#
+b100 X#
+b11 V#
+b10 T#
+b1 R#
+b0 P#
+$end
+#0
+$dumpvars
+r0 F%
+r25 E%
+r0 D%
+r0 C%
+r1 B%
+r0 A%
+rnan @%
+b0xxxxxxxxxx ?%
+1>%
+bx =%
+0<%
+1;%
+0:%
+19%
+08%
+17%
+06%
+15%
+04%
+13%
+02%
+11%
+00%
+1/%
+x[$
+xY$
+xW$
+xU$
+xS$
+xQ$
+xO$
+xM$
+xK$
+xI$
+xG$
+xE$
+xC$
+xA$
+x?$
+x=$
+x;$
+x9$
+x7$
+x5$
+x3$
+x1$
+x/$
+x-$
+x+$
+x)$
+x'$
+x%$
+x#$
+x!$
+x}#
+x{#
+xm#
+xk#
+xi#
+xg#
+xe#
+xc#
+xa#
+x_#
+x]#
+x[#
+xY#
+xW#
+xU#
+xS#
+xQ#
+xO#
+bx N#
+xM#
+xL#
+xK#
+xJ#
+xI#
+xH#
+xG#
+bx F#
+bx E#
+bx D#
+xC#
+bx B#
+xA#
+bx @#
+bx ?#
+x>#
+x=#
+x<#
+x;#
+x:#
+x9#
+x8#
+bx 7#
+bx 6#
+bx 5#
+bx 4#
+bx 3#
+bx 2#
+bx 1#
+bx 0#
+x/#
+x.#
+x-#
+x,#
+x+#
+x*#
+x)#
+x(#
+x'#
+x&#
+x%#
+x$#
+x##
+x"#
+x!#
+x~"
+x}"
+x|"
+x{"
+xz"
+xy"
+xx"
+xw"
+xv"
+xu"
+xt"
+xs"
+xr"
+xq"
+xp"
+xo"
+xn"
+xm"
+xl"
+xk"
+xj"
+xi"
+xh"
+xg"
+xf"
+xe"
+xd"
+xc"
+xb"
+xa"
+x`"
+x_"
+x^"
+x]"
+x\"
+x["
+xZ"
+xY"
+xX"
+xW"
+xV"
+xU"
+xT"
+xS"
+xR"
+xQ"
+xP"
+xO"
+xN"
+xM"
+xL"
+xK"
+xJ"
+xI"
+xH"
+xG"
+xF"
+xE"
+xD"
+xC"
+xB"
+xA"
+x@"
+x?"
+x>"
+x="
+x<"
+x;"
+x:"
+x9"
+x8"
+x7"
+x6"
+x5"
+bx 4"
+bx 3"
+bx 2"
+bx 1"
+x0"
+bx /"
+bx ."
+bx -"
+bx ,"
+bx +"
+bx *"
+bx )"
+bx ("
+bx '"
+b0xxxx &"
+bx %"
+1$"
+bx #"
+bx ""
+x!"
+x~
+x}
+x|
+x{
+xz
+xy
+xx
+xw
+xv
+xu
+xt
+xs
+xr
+xq
+xp
+xo
+xn
+xm
+xl
+xk
+xj
+xi
+xh
+xg
+xf
+xe
+xd
+xc
+xb
+xa
+x`
+x_
+x^
+x]
+bx \
+bx [
+bx Z
+bx Y
+bx X
+bx W
+bx V
+bx U
+bx T
+xS
+xR
+bx Q
+bx P
+xO
+xN
+0M
+0L
+0K
+0J
+0I
+0H
+0G
+xF
+xE
+xD
+xC
+xB
+xA
+bx @
+bx ?
+x>
+x=
+bx <
+bx ;
+0:
+x9
+bx 8
+x7
+x6
+x5
+x4
+x3
+bx 2
+x1
+x0
+x/
+x.
+bx -
+0,
+0+
+bx *
+1)
+r0 (
+r0 '
+r3.3 &
+0%
+0$
+0#
+1"
+x!
+$end
+#20000
+0$"
+1:
+1%
+#100000
+r1e-07 D%
+1#
+#120000
+1$"
+0:
+0%
+#141665
+1$
+#241665
+0#
+#283330
+0$
+#383330
+r3.8333e-07 D%
+r3.541625e-08 E%
+r2.8333e-07 F%
+1#
+#424995
+1$
+#524995
+0#
+#566660
+0$
+#666660
+r6.6666e-07 D%
+1#
+#708325
+1$
+#808325
+0#
+#849990
+0$
+#949990
+r9.499900000000001e-07 D%
+r3.541625000000001e-08 E%
+r2.833300000000001e-07 F%
+1#
+#991655
+1$
+#1091655
+0#
+#1133320
+0$
+#1233320
+r1.23332e-06 D%
+r3.541625e-08 E%
+r2.8333e-07 F%
+1#
+#1274985
+1$
+#1374985
+0#
+#1416650
+0$
+#1516650
+r1.51665e-06 D%
+r3.541624999999998e-08 E%
+r2.833299999999999e-07 F%
+1#
+#1558315
+1$
+#1658315
+0#
+#1699980
+0$
+#1799980
+r1.79998e-06 D%
+r3.541625000000001e-08 E%
+r2.833300000000001e-07 F%
+1#
+#1841645
+1$
+#1941645
+0#
+#1983310
+0$
+#2083310
+r2.08331e-06 D%
+r3.541624999999998e-08 E%
+r2.833299999999999e-07 F%
+1#
+#2124975
+1$
+#2224975
+0#
+#2266640
+0$
+#2366640
+r2.36664e-06 D%
+r3.541625000000004e-08 E%
+r2.833300000000003e-07 F%
+1#
+#2408305
+1$
+#2508305
+0#
+#2549970
+0$
+#2649970
+r2.64997e-06 D%
+r3.541624999999998e-08 E%
+r2.833299999999999e-07 F%
+1#
+#2691635
+1$
+#2791635
+0#
+#2833300
+0$
+#2933300
+r2.9333e-06 D%
+1#
+#2974965
+1$
+#3074965
+0#
+#3116630
+0$
+#3216630
+r3.21663e-06 D%
+1#
+#3258295
+1$
+#3358295
+0#
+#3399960
+0$
+#3499960
+r3.49996e-06 D%
+r3.541625000000004e-08 E%
+r2.833300000000003e-07 F%
+1#
+#3541625
+1$
+#3641625
+0#
+#3683290
+0$
+#3783290
+r3.78329e-06 D%
+r3.541624999999998e-08 E%
+r2.833299999999999e-07 F%
+1#
+#3824955
+1$
+#3924955
+0#
+#3966620
+0$
+#4066620
+r4.06662e-06 D%
+1#
+#4108285
+1$
+#4208285
+0#
+#4249950
+0$
+#4349950
+r4.34995e-06 D%
+1#
+#4391615
+1$
+#4491615
+0#
+#4533280
+0$
+#4633280
+r4.63328e-06 D%
+1#
+#4674945
+1$
+#4774945
+0#
+#4816610
+0$
+#4916610
+r4.91661e-06 D%
+r3.541625000000009e-08 E%
+r2.833300000000007e-07 F%
+1#
+#4958275
+1$
+#5058275
+0#
+#5099940
+0$
+#5199940
+r5.19994e-06 D%
+r3.541624999999998e-08 E%
+r2.833299999999999e-07 F%
+1#
+#5241605
+1$
+#5341605
+0#
+#5383270
+0$
+#5483270
+r5.48327e-06 D%
+1#
+#5524935
+1$
+#5624935
+0#
+#5666600
+0$
+#5766600
+r5.7666e-06 D%
+1#
+#5808265
+1$
+#5908265
+0#
+#5949930
+0$
+#6049930
+r6.04993e-06 D%
+1#
+#6091595
+1$
+#6191595
+0#
+#6233260
+0$
+#6333260
+r6.33326e-06 D%
+1#
+#6374925
+1$
+#6474925
+0#
+#6516590
+0$
+#6616590
+r6.61659e-06 D%
+1#
+#6658255
+1$
+#6758255
+0#
+#6799920
+0$
+#6899920
+r6.89992e-06 D%
+r3.541625000000009e-08 E%
+r2.833300000000007e-07 F%
+1#
+#6941585
+1$
+#7041585
+0#
+#7083250
+0$
+#7183250
+r7.18325e-06 D%
+r3.541624999999998e-08 E%
+r2.833299999999999e-07 F%
+1#
+#7224915
+1$
+#7324915
+0#
+#7366580
+0$
+#7466580
+r7.46658e-06 D%
+1#
+#7508245
+1$
+#7608245
+0#
+#7649910
+0$
+#7749910
+r7.749910000000001e-06 D%
+r3.541625000000009e-08 E%
+r2.833300000000007e-07 F%
+1#
+#7791575
+1$
+#7891575
+0#
+#7933240
+0$
+#8033240
+r8.033240000000001e-06 D%
+r3.541624999999998e-08 E%
+r2.833299999999999e-07 F%
+1#
+#8074905
+1$
+#8174905
+0#
+#8216570
+0$
+#8316570
+r8.316570000000001e-06 D%
+1#
+#8358235
+1$
+#8458235
+0#
+#8499900
+0$
+#8599900
+r8.5999e-06 D%
+1#
+#8641565
+1$
+#8741565
+0#
+#8783230
+0$
+#8883230
+r8.88323e-06 D%
+1#
+#8924895
+1$
+#9024895
+0#
+#9066560
+0$
+#9166560
+r9.16656e-06 D%
+1#
+#9208225
+1$
+#9308225
+0#
+#9349890
+0$
+#9449890
+r9.44989e-06 D%
+1#
+#9491555
+1$
+#9591555
+0#
+#9633220
+0$
+#9733220
+r9.73322e-06 D%
+1#
+#9774885
+1$
+#9874885
+0#
+#9916550
+0$
+#10016550
+r1.001655e-05 D%
+1#
+#10058215
+1$
+#10158215
+0#
+#10199880
+0$
+#10299880
+r1.029988e-05 D%
+1#
+#10341545
+1$
+#10441545
+0#
+#10483210
+0$
+#10583210
+r1.058321e-05 D%
+1#
+#10624875
+1$
+#10724875
+0#
+#10766540
+0$
+#10866540
+r1.086654e-05 D%
+1#
+#10908205
+1$
+#11008205
+0#
+#11049870
+0$
+#11149870
+r1.114987e-05 D%
+1#
+#11191535
+1$
+#11291535
+0#
+#11333200
+0$
+#11433200
+r1.14332e-05 D%
+1#
+#11474865
+1$
+#11574865
+0#
+#11616530
+0$
+#11716530
+r1.171653e-05 D%
+r3.54162500000002e-08 E%
+r2.833300000000016e-07 F%
+1#
+#11758195
+1$
+#11858195
+0#
+#11899860
+0$
+#11999860
+r1.199986e-05 D%
+r3.541624999999998e-08 E%
+r2.833299999999999e-07 F%
+1#
+#12041525
+1$
+#12141525
+0#
+#12183190
+0$
+#12283190
+r1.228319e-05 D%
+1#
+#12324855
+1$
+#12424855
+0#
+#12466520
+0$
+#12566520
+r1.256652e-05 D%
+1#
+#12608185
+1$
+#12708185
+0#
+#12749850
+0$
+#12849850
+r1.284985e-05 D%
+1#
+#12891515
+1$
+#12991515
+0#
+#13033180
+0$
+#13133180
+r1.313318e-05 D%
+1#
+#13174845
+1$
+#13274845
+0#
+#13316510
+0$
+#13416510
+r1.341651e-05 D%
+1#
+#13458175
+1$
+#13558175
+0#
+#13599840
+0$
+#13699840
+r1.369984e-05 D%
+1#
+#13741505
+1$
+#13841505
+0#
+#13883170
+0$
+#13983170
+r1.398317e-05 D%
+1#
+#14024835
+1$
+#14124835
+0#
+#14166500
+0$
+#14266500
+r1.42665e-05 D%
+1#
+#14308165
+1$
+#14408165
+0#
+#14449830
+0$
+#14549830
+r1.454983e-05 D%
+1#
+#14591495
+1$
+#14691495
+0#
+#14733160
+0$
+#14833160
+r1.483316e-05 D%
+1#
+#14874825
+1$
+#14974825
+0#
+#15016490
+0$
+#15116490
+r1.511649e-05 D%
+1#
+#15158155
+1$
+#15258155
+0#
+#15299820
+0$
+#15399820
+r1.539982e-05 D%
+1#
+#15441485
+1$
+#15541485
+0#
+#15583150
+0$
+#15683150
+r1.568315e-05 D%
+1#
+#15724815
+1$
+#15824815
+0#
+#15866480
+0$
+#15966480
+r1.596648e-05 D%
+1#
+#16008145
+1$
+#16108145
+0#
+#16149810
+0$
+#16249810
+r1.624981e-05 D%
+1#
+#16291475
+1$
+#16391475
+0#
+#16433140
+0$
+#16533140
+r1.653314e-05 D%
+1#
+#16574805
+1$
+#16674805
+0#
+#16716470
+0$
+#16816470
+r1.681647e-05 D%
+1#
+#16858135
+1$
+#16958135
+0#
+#16999800
+0$
+#17099800
+r1.70998e-05 D%
+1#
+#17141465
+1$
+#17241465
+0#
+#17283130
+0$
+#17383130
+r1.738313e-05 D%
+1#
+#17424795
+1$
+#17524795
+0#
+#17566460
+0$
+#17666460
+r1.766646e-05 D%
+r3.541625000000041e-08 E%
+r2.833300000000033e-07 F%
+1#
+#17708125
+1$
+#17808125
+0#
+#17849790
+0$
+#17949790
+r1.794979e-05 D%
+r3.541624999999998e-08 E%
+r2.833299999999999e-07 F%
+1#
+#17991455
+1$
+#18091455
+0#
+#18133120
+0$
+#18233120
+r1.823312e-05 D%
+1#
+#18274785
+1$
+#18374785
+0#
+#18416450
+0$
+#18516450
+r1.851645e-05 D%
+1#
+#18558115
+1$
+#18658115
+0#
+#18699780
+0$
+#18799780
+r1.879978e-05 D%
+1#
+#18841445
+1$
+#18941445
+0#
+#18983110
+0$
+#19083110
+r1.908311e-05 D%
+1#
+#19124775
+1$
+#19224775
+0#
+#19266440
+0$
+#19366440
+r1.936644e-05 D%
+1#
+#19408105
+1$
+#19508105
+0#
+#19549770
+0$
+#19649770
+r1.964977e-05 D%
+1#
+#19691435
+1$
+#19791435
+0#
+#19833100
+0$
+#19933100
+r1.99331e-05 D%
+1#
+#19974765
+1$
+#20074765
+0#
+#20116430
+0$
+#20216430
+r2.021643e-05 D%
+1#
+#20258095
+1$
+#20358095
+0#
+#20399760
+0$
+#20499760
+r2.049976e-05 D%
+1#
+#20541425
+1$
+#20641425
+0#
+#20683090
+0$
+#20783090
+r2.078309e-05 D%
+1#
+#20824755
+1$
+#20924755
+0#
+#20966420
+0$
+#21066420
+r2.106642e-05 D%
+1#
+#21108085
+1$
+#21208085
+0#
+#21249750
+0$
+#21349750
+r2.134975e-05 D%
+1#
+#21391415
+1$
+#21491415
+0#
+#21533080
+0$
+#21633080
+r2.163308e-05 D%
+1#
+#21674745
+1$
+#21774745
+0#
+#21816410
+0$
+#21916410
+r2.191641e-05 D%
+1#
+#21958075
+1$
+#22058075
+0#
+#22099740
+0$
+#22199740
+r2.219974e-05 D%
+1#
+#22241405
+1$
+#22341405
+0#
+#22383070
+0$
+#22483070
+r2.248307e-05 D%
+1#
+#22524735
+1$
+#22624735
+0#
+#22666400
+0$
+#22766400
+r2.27664e-05 D%
+1#
+#22808065
+1$
+#22908065
+0#
+#22949730
+0$
+#23049730
+r2.304973e-05 D%
+1#
+#23091395
+1$
+#23191395
+0#
+#23233060
+0$
+#23333060
+r2.333306e-05 D%
+1#
+#23374725
+1$
+#23474725
+0#
+#23516390
+0$
+#23616390
+r2.361639e-05 D%
+1#
+#23658055
+1$
+#23758055
+0#
+#23799720
+0$
+#23899720
+r2.389972e-05 D%
+1#
+#23941385
+1$
+#24041385
+0#
+#24083050
+0$
+#24183050
+r2.418305e-05 D%
+1#
+#24224715
+1$
+#24324715
+0#
+#24366380
+0$
+#24466380
+r2.446638e-05 D%
+1#
+#24508045
+1$
+#24608045
+0#
+#24649710
+0$
+#24749710
+r2.474971e-05 D%
+1#
+#24791375
+1$
+#24891375
+0#
+#24933040
+0$
+#25033040
+r2.503304e-05 D%
+1#
+#25074705
+1$
+#25174705
+0#
+#25216370
+0$
+#25316370
+r2.531637e-05 D%
+1#
+#25358035
+1$
+#25458035
+0#
+#25499700
+0$
+#25599700
+r2.55997e-05 D%
+r3.541625000000041e-08 E%
+r2.833300000000033e-07 F%
+1#
+#25641365
+1$
+#25741365
+0#
+#25783030
+0$
+#25883030
+r2.588303e-05 D%
+r3.541624999999998e-08 E%
+r2.833299999999999e-07 F%
+1#
+#25924695
+1$
+#26024695
+0#
+#26066360
+0$
+#26166360
+r2.616636e-05 D%
+1#
+#26208025
+1$
+#26308025
+0#
+#26349690
+0$
+#26449690
+r2.644969e-05 D%
+1#
+#26491355
+1$
+#26591355
+0#
+#26633020
+0$
+#26733020
+r2.673302e-05 D%
+1#
+#26774685
+1$
+#26874685
+0#
+#26916350
+0$
+#27016350
+r2.701635e-05 D%
+1#
+#27058015
+1$
+#27158015
+0#
+#27199680
+0$
+#27299680
+r2.729968e-05 D%
+1#
+#27341345
+1$
+#27441345
+0#
+#27483010
+0$
+#27583010
+r2.758301e-05 D%
+1#
+#27624675
+1$
+#27724675
+0#
+#27766340
+0$
+#27866340
+r2.786634e-05 D%
+1#
+#27908005
+1$
+#28008005
+0#
+#28049670
+0$
+#28149670
+r2.814967e-05 D%
+1#
+#28191335
+1$
+#28291335
+0#
+#28333000
+0$
+#28433000
+r2.8433e-05 D%
+1#
+#28474665
+1$
+#28574665
+0#
+#28616330
+0$
+#28716330
+r2.871633e-05 D%
+1#
+#28757995
+1$
+#28857995
+0#
+#28899660
+0$
+#28999660
+r2.899966e-05 D%
+1#
+#29041325
+1$
+#29141325
+0#
+#29182990
+0$
+#29282990
+r2.928299e-05 D%
+1#
+#29324655
+1$
+#29424655
+0#
+#29466320
+0$
+#29566320
+r2.956632e-05 D%
+1#
+#29607985
+1$
+#29707985
+0#
+#29749650
+0$
+#29849650
+r2.984965e-05 D%
+1#
+#29891315
+1$
+#29991315
+0#
+#30032980
+0$
+#30132980
+r3.013298e-05 D%
+1#
+#30174645
+1$
+#30274645
+0#
+#30316310
+0$
+#30416310
+r3.041631e-05 D%
+1#
+#30457975
+1$
+#30557975
+0#
+#30599640
+0$
+#30699640
+r3.069964e-05 D%
+r3.541625000000041e-08 E%
+r2.833300000000033e-07 F%
+1#
+#30741305
+1$
+#30841305
+0#
+#30882970
+0$
+#30982970
+r3.098297e-05 D%
+r3.541624999999998e-08 E%
+r2.833299999999999e-07 F%
+1#
+#31024635
+1$
+#31124635
+0#
+#31166300
+0$
+#31266300
+r3.12663e-05 D%
+1#
+#31307965
+1$
+#31407965
+0#
+#31449630
+0$
+#31549630
+r3.154963e-05 D%
+1#
+#31591295
+1$
+#31691295
+0#
+#31732960
+0$
+#31832960
+r3.183296e-05 D%
+1#
+#31874625
+1$
+#31974625
+0#
+#32016290
+0$
+#32116290
+r3.211629e-05 D%
+1#
+#32157955
+1$
+#32257955
+0#
+#32299620
+0$
+#32399620
+r3.239962e-05 D%
+1#
+#32441285
+1$
+#32541285
+0#
+#32582950
+0$
+#32682950
+r3.268295e-05 D%
+1#
+#32724615
+1$
+#32824615
+0#
+#32866280
+0$
+#32966280
+r3.296628e-05 D%
+1#
+#33007945
+1$
+#33107945
+0#
+#33149610
+0$
+#33249610
+r3.324961e-05 D%
+1#
+#33291275
+1$
+#33391275
+0#
+#33432940
+0$
+#33532940
+r3.353294e-05 D%
+1#
+#33574605
+1$
+#33674605
+0#
+#33716270
+0$
+#33816270
+r3.381627e-05 D%
+1#
+#33857935
+1$
+#33957935
+0#
+#33999600
+0$
+#34099600
+r3.40996e-05 D%
+1#
+#34141265
+1$
+#34241265
+0#
+#34282930
+0$
+#34382930
+r3.438293e-05 D%
+1#
+#34424595
+1$
+#34524595
+0#
+#34566260
+0$
+#34666260
+r3.466626e-05 D%
+1#
+#34707925
+1$
+#34807925
+0#
+#34849590
+0$
+#34949590
+r3.494959e-05 D%
+1#
+#34991255
+1$
+#35091255
+0#
+#35132920
+0$
+#35232920
+r3.523292e-05 D%
+1#
+#35274585
+1$
+#35374585
+0#
+#35416250
+0$
+#35516250
+r3.551625e-05 D%
+1#
+#35557915
+1$
+#35657915
+0#
+#35699580
+0$
+#35799580
+r3.579958e-05 D%
+1#
+#35841245
+1$
+#35941245
+0#
+#35982910
+0$
+#36082910
+r3.608291e-05 D%
+1#
+#36124575
+1$
+#36224575
+0#
+#36266240
+0$
+#36366240
+r3.636624e-05 D%
+1#
+#36407905
+1$
+#36507905
+0#
+#36549570
+0$
+#36649570
+r3.664957e-05 D%
+1#
+#36691235
+1$
+#36791235
+0#
+#36832900
+0$
+#36932900
+r3.69329e-05 D%
+1#
+#36974565
+1$
+#37074565
+0#
+#37116230
+0$
+#37216230
+r3.721623e-05 D%
+1#
+#37257895
+1$
+#37357895
+0#
+#37399560
+0$
+#37499560
+r3.749956e-05 D%
+1#
+#37541225
+1$
+#37641225
+0#
+#37682890
+0$
+#37782890
+r3.778289e-05 D%
+1#
+#37824555
+1$
+#37924555
+0#
+#37966220
+0$
+#38066220
+r3.806622e-05 D%
+1#
+#38107885
+1$
+#38207885
+0#
+#38249550
+0$
+#38349550
+r3.834955e-05 D%
+1#
+#38391215
+1$
+#38491215
+0#
+#38532880
+0$
+#38632880
+r3.863288e-05 D%
+1#
+#38674545
+1$
+#38774545
+0#
+#38816210
+0$
+#38916210
+r3.891621e-05 D%
+1#
+#38957875
+1$
+#39057875
+0#
+#39099540
+0$
+#39199540
+r3.919954e-05 D%
+1#
+#39241205
+1$
+#39341205
+0#
+#39382870
+0$
+#39482870
+r3.948287e-05 D%
+1#
+#39524535
+1$
+#39624535
+0#
+#39666200
+0$
+#39766200
+r3.97662e-05 D%
+1#
+#39807865
+1$
+#39907865
+0#
+#39949530
+0$
+#40049530
+r4.004953e-05 D%
+1#
+#40091195
+1$
+#40191195
+0#
+#40232860
+0$
+#40332860
+r4.033286e-05 D%
+1#
+#40374525
+1$
+#40474525
+0#
+#40516190
+0$
+#40616190
+r4.061619e-05 D%
+1#
+#40657855
+1$
+#40757855
+0#
+#40799520
+0$
+#40899520
+r4.089952e-05 D%
+1#
+#40941185
+1$
+#41041185
+0#
+#41082850
+0$
+#41182850
+r4.118285e-05 D%
+1#
+#41224515
+1$
+#41324515
+0#
+#41366180
+0$
+#41466180
+r4.146618e-05 D%
+1#
+#41507845
+1$
+#41607845
+0#
+#41649510
+0$
+#41749510
+r4.174951e-05 D%
+1#
+#41791175
+1$
+#41891175
+0#
+#41932840
+0$
+#42032840
+r4.203284e-05 D%
+1#
+#42074505
+1$
+#42174505
+0#
+#42216170
+0$
+#42316170
+r4.231617e-05 D%
+1#
+#42357835
+1$
+#42457835
+0#
+#42499500
+0$
+#42599500
+r4.25995e-05 D%
+1#
+#42641165
+1$
+#42741165
+0#
+#42782830
+0$
+#42882830
+r4.288283e-05 D%
+1#
+#42924495
+1$
+#43024495
+0#
+#43066160
+0$
+#43166160
+r4.316616e-05 D%
+1#
+#43207825
+1$
+#43307825
+0#
+#43349490
+0$
+#43449490
+r4.344949e-05 D%
+1#
+#43491155
+1$
+#43591155
+0#
+#43632820
+0$
+#43732820
+r4.373282e-05 D%
+1#
+#43774485
+1$
+#43874485
+0#
+#43916150
+0$
+#44016150
+r4.401615e-05 D%
+1#
+#44057815
+1$
+#44157815
+0#
+#44199480
+0$
+#44299480
+r4.429948e-05 D%
+1#
+#44341145
+1$
+#44441145
+0#
+#44482810
+0$
+#44582810
+r4.458281e-05 D%
+1#
+#44624475
+1$
+#44724475
+0#
+#44766140
+0$
+#44866140
+r4.486614e-05 D%
+1#
+#44907805
+1$
+#45007805
+0#
+#45049470
+0$
+#45149470
+r4.514947e-05 D%
+r3.541625000000083e-08 E%
+r2.833300000000067e-07 F%
+1#
+#45191135
+1$
+#45291135
+0#
+#45332800
+0$
+#45432800
+r4.54328e-05 D%
+r3.541624999999998e-08 E%
+r2.833299999999999e-07 F%
+1#
+#45474465
+1$
+#45574465
+0#
+#45616130
+0$
+#45716130
+r4.571613e-05 D%
+1#
+#45757795
+1$
+#45857795
+0#
+#45899460
+0$
+#45999460
+r4.599946e-05 D%
+1#
+#46041125
+1$
+#46141125
+0#
+#46182790
+0$
+#46282790
+r4.628279e-05 D%
+1#
+#46324455
+1$
+#46424455
+0#
+#46466120
+0$
+#46566120
+r4.656612e-05 D%
+1#
+#46607785
+1$
+#46707785
+0#
+#46749450
+0$
+#46849450
+r4.684945e-05 D%
+1#
+#46891115
+1$
+#46991115
+0#
+#47032780
+0$
+#47132780
+r4.713278e-05 D%
+1#
+#47174445
+1$
+#47274445
+0#
+#47316110
+0$
+#47416110
+r4.741611e-05 D%
+1#
+#47457775
+1$
+#47557775
+0#
+#47599440
+0$
+#47699440
+r4.769944e-05 D%
+1#
+#47741105
+1$
+#47841105
+0#
+#47882770
+0$
+#47982770
+r4.798277e-05 D%
+1#
+#48024435
+1$
+#48124435
+0#
+#48166100
+0$
+#48266100
+r4.82661e-05 D%
+1#
+#48307765
+1$
+#48407765
+0#
+#48449430
+0$
+#48549430
+r4.854943e-05 D%
+1#
+#48591095
+1$
+#48691095
+0#
+#48732760
+0$
+#48832760
+r4.883276e-05 D%
+1#
+#48874425
+1$
+#48974425
+0#
+#49016090
+0$
+#49116090
+r4.911609e-05 D%
+1#
+#49157755
+1$
+#49257755
+0#
+#49299420
+0$
+#49399420
+r4.939942e-05 D%
+1#
+#49441085
+1$
+#49541085
+0#
+#49582750
+0$
+#49682750
+r4.968275e-05 D%
+1#
+#49724415
+1$
+#49824415
+0#
+#49866080
+0$
+#49966080
+r4.996608e-05 D%
+1#
+#50007745
+1$
+#50107745
+0#
+#50149410
+0$
+#50249410
+r5.024941e-05 D%
+1#
+#50291075
+1$
+#50391075
+0#
+#50432740
+0$
+#50532740
+r5.053274e-05 D%
+1#
+#50574405
+1$
+#50674405
+0#
+#50716070
+0$
+#50816070
+r5.081607e-05 D%
+1#
+#50857735
+1$
+#50957735
+0#
+#50999400
+0$
+#51099400
+r5.10994e-05 D%
+1#
+#51141065
+1$
+#51241065
+0#
+#51282730
+0$
+#51382730
+r5.138273e-05 D%
+1#
+#51424395
+1$
+#51524395
+0#
+#51566060
+0$
+#51666060
+r5.166606e-05 D%
+1#
+#51707725
+1$
+#51807725
+0#
+#51849390
+0$
+#51949390
+r5.194939e-05 D%
+1#
+#51991055
+1$
+#52091055
+0#
+#52132720
+0$
+#52232720
+r5.223272e-05 D%
+1#
+#52274385
+1$
+#52374385
+0#
+#52416050
+0$
+#52516050
+r5.251605e-05 D%
+1#
+#52557715
+1$
+#52657715
+0#
+#52699380
+0$
+#52799380
+r5.279938e-05 D%
+1#
+#52841045
+1$
+#52941045
+0#
+#52982710
+0$
+#53082710
+r5.308271e-05 D%
+1#
+#53124375
+1$
+#53224375
+0#
+#53266040
+0$
+#53366040
+r5.336604e-05 D%
+1#
+#53407705
+1$
+#53507705
+0#
+#53549370
+0$
+#53649370
+r5.364937e-05 D%
+1#
+#53691035
+1$
+#53791035
+0#
+#53832700
+0$
+#53932700
+r5.39327e-05 D%
+1#
+#53974365
+1$
+#54074365
+0#
+#54116030
+0$
+#54216030
+r5.421603e-05 D%
+1#
+#54257695
+1$
+#54357695
+0#
+#54399360
+0$
+#54499360
+r5.449936e-05 D%
+1#
+#54541025
+1$
+#54641025
+0#
+#54682690
+0$
+#54782690
+r5.478269e-05 D%
+1#
+#54824355
+1$
+#54924355
+0#
+#54966020
+0$
+#55066020
+r5.506602e-05 D%
+1#
+#55107685
+1$
+#55207685
+0#
+#55249350
+0$
+#55349350
+r5.534935e-05 D%
+1#
+#55391015
+1$
+#55491015
+0#
+#55532680
+0$
+#55632680
+r5.563268e-05 D%
+1#
+#55674345
+1$
+#55774345
+0#
+#55816010
+0$
+#55916010
+r5.591601e-05 D%
+1#
+#55957675
+1$
+#56057675
+0#
+#56099340
+0$
+#56199340
+r5.619934e-05 D%
+1#
+#56241005
+1$
+#56341005
+0#
+#56382670
+0$
+#56482670
+r5.648267e-05 D%
+1#
+#56524335
+1$
+#56624335
+0#
+#56666000
+0$
+#56766000
+r5.6766e-05 D%
+1#
+#56807665
+1$
+#56907665
+0#
+#56949330
+0$
+#57049330
+r5.704933e-05 D%
+1#
+#57090995
+1$
+#57190995
+0#
+#57232660
+0$
+#57332660
+r5.733266e-05 D%
+1#
+#57374325
+1$
+#57474325
+0#
+#57515990
+0$
+#57615990
+r5.761599e-05 D%
+1#
+#57657655
+1$
+#57757655
+0#
+#57799320
+0$
+#57899320
+r5.789932e-05 D%
+1#
+#57940985
+1$
+#58040985
+0#
+#58082650
+0$
+#58182650
+r5.818265e-05 D%
+1#
+#58224315
+1$
+#58324315
+0#
+#58365980
+0$
+#58465980
+r5.846598e-05 D%
+1#
+#58507645
+1$
+#58607645
+0#
+#58649310
+0$
+#58749310
+r5.874931e-05 D%
+1#
+#58790975
+1$
+#58890975
+0#
+#58932640
+0$
+#59032640
+r5.903264e-05 D%
+1#
+#59074305
+1$
+#59174305
+0#
+#59215970
+0$
+#59315970
+r5.931597e-05 D%
+1#
+#59357635
+1$
+#59457635
+0#
+#59499300
+0$
+#59599300
+r5.95993e-05 D%
+1#
+#59640965
+1$
+#59740965
+0#
+#59782630
+0$
+#59882630
+r5.988263e-05 D%
+1#
+#59924295
+1$
+#60024295
+0#
+#60065960
+0$
+#60165960
+r6.016596e-05 D%
+1#
+#60207625
+1$
+#60307625
+0#
+#60349290
+0$
+#60449290
+r6.044929e-05 D%
+1#
+#60490955
+1$
+#60590955
+0#
+#60632620
+0$
+#60732620
+r6.073262e-05 D%
+r3.541625000000083e-08 E%
+r2.833300000000067e-07 F%
+1#
+#60774285
+1$
+#60874285
+0#
+#60915950
+0$
+#61015950
+r6.101595e-05 D%
+r3.541624999999998e-08 E%
+r2.833299999999999e-07 F%
+1#
+#61057615
+1$
+#61157615
+0#
+#61199280
+0$
+#61299280
+r6.129928e-05 D%
+1#
+#61340945
+1$
+#61440945
+0#
+#61482610
+0$
+#61582610
+r6.158261e-05 D%
+r3.541624999999914e-08 E%
+r2.833299999999931e-07 F%
+1#
+#61624275
+1$
+#61724275
+0#
+#61765940
+0$
+#61865940
+r6.186594e-05 D%
+r3.541625000000083e-08 E%
+r2.833300000000067e-07 F%
+1#
+#61907605
+1$
+#62007605
+0#
+#62049270
+0$
+#62149270
+r6.214927e-05 D%
+r3.541624999999914e-08 E%
+r2.833299999999931e-07 F%
+1#
+#62190935
+1$
+#62290935
+0#
+#62332600
+0$
+#62432600
+r6.24326e-05 D%
+r3.541625000000083e-08 E%
+r2.833300000000067e-07 F%
+1#
+#62474265
+1$
+#62574265
+0#
+#62615930
+0$
+#62715930
+r6.271593e-05 D%
+r3.541624999999914e-08 E%
+r2.833299999999931e-07 F%
+1#
+#62757595
+1$
+#62857595
+0#
+#62899260
+0$
+#62999260
+r6.299926e-05 D%
+r3.541625000000083e-08 E%
+r2.833300000000067e-07 F%
+1#
+#63040925
+1$
+#63140925
+0#
+#63182590
+0$
+#63282590
+r6.328259e-05 D%
+r3.541624999999914e-08 E%
+r2.833299999999931e-07 F%
+1#
+#63324255
+1$
+#63424255
+0#
+#63465920
+0$
+#63565920
+r6.356592e-05 D%
+r3.541625000000083e-08 E%
+r2.833300000000067e-07 F%
+1#
+#63607585
+1$
+#63707585
+0#
+#63749250
+0$
+#63849250
+r6.384925e-05 D%
+r3.541624999999914e-08 E%
+r2.833299999999931e-07 F%
+1#
+#63890915
+1$
+#63990915
+0#
+#64032580
+0$
+#64132580
+r6.413258e-05 D%
+r3.541625000000083e-08 E%
+r2.833300000000067e-07 F%
+1#
+#64174245
+1$
+#64274245
+0#
+#64315910
+0$
+#64415910
+r6.441590999999999e-05 D%
+r3.541624999999914e-08 E%
+r2.833299999999931e-07 F%
+1#
+#64457575
+1$
+#64557575
+0#
+#64599240
+0$
+#64699240
+r6.469924e-05 D%
+r3.541625000000083e-08 E%
+r2.833300000000067e-07 F%
+1#
+#64740905
+1$
+#64840905
+0#
+#64882570
+0$
+#64982570
+r6.498256999999999e-05 D%
+r3.541624999999914e-08 E%
+r2.833299999999931e-07 F%
+1#
+#65024235
+1$
+#65124235
+0#
+#65165900
+0$
+#65265900
+r6.52659e-05 D%
+r3.541625000000083e-08 E%
+r2.833300000000067e-07 F%
+1#
+#65307565
+1$
+#65407565
+0#
+#65449230
+0$
+#65549230
+r6.554922999999999e-05 D%
+r3.541624999999914e-08 E%
+r2.833299999999931e-07 F%
+1#
+#65590895
+1$
+#65690895
+0#
+#65732560
+0$
+#65832560
+r6.583256e-05 D%
+r3.541625000000083e-08 E%
+r2.833300000000067e-07 F%
+1#
+#65874225
+1$
+#65974225
+0#
+#66015890
+0$
+#66115890
+r6.611588999999999e-05 D%
+r3.541624999999914e-08 E%
+r2.833299999999931e-07 F%
+1#
+#66157555
+1$
+#66257555
+0#
+#66299220
+0$
+#66399220
+r6.639922e-05 D%
+r3.541625000000083e-08 E%
+r2.833300000000067e-07 F%
+1#
+#66440885
+1$
+#66540885
+0#
+#66582550
+0$
+#66682550
+r6.668254999999999e-05 D%
+r3.541624999999914e-08 E%
+r2.833299999999931e-07 F%
+1#
+#66724215
+1$
+#66824215
+0#
+#66865880
+0$
+#66965880
+r6.696588e-05 D%
+r3.541625000000083e-08 E%
+r2.833300000000067e-07 F%
+1#
+#67007545
+1$
+#67107545
+0#
+#67149210
+0$
+#67249210
+r6.724920999999999e-05 D%
+r3.541624999999914e-08 E%
+r2.833299999999931e-07 F%
+1#
+#67290875
+1$
+#67390875
+0#
+#67432540
+0$
+#67532540
+r6.753254e-05 D%
+r3.541625000000083e-08 E%
+r2.833300000000067e-07 F%
+1#
+#67574205
+1$
+#67674205
+0#
+#67715870
+0$
+#67815870
+r6.781586999999999e-05 D%
+r3.541624999999914e-08 E%
+r2.833299999999931e-07 F%
+1#
+#67857535
+1$
+#67957535
+0#
+#67999200
+0$
+#68099200
+r6.80992e-05 D%
+r3.541625000000083e-08 E%
+r2.833300000000067e-07 F%
+1#
+#68140865
+1$
+#68240865
+0#
+#68282530
+0$
+#68382530
+r6.838252999999999e-05 D%
+r3.541624999999914e-08 E%
+r2.833299999999931e-07 F%
+1#
+#68424195
+1$
+#68524195
+0#
+#68565860
+0$
+#68665860
+r6.866586e-05 D%
+r3.541625000000083e-08 E%
+r2.833300000000067e-07 F%
+1#
+#68707525
+1$
+#68807525
+0#
+#68849190
+0$
+#68949190
+r6.894919000000001e-05 D%
+1#
+#68990855
+1$
+#69090855
+0#
+#69132520
+0$
+#69232520
+r6.923252e-05 D%
+r3.541624999999914e-08 E%
+r2.833299999999931e-07 F%
+1#
+#69274185
+1$
+#69374185
+0#
+#69415850
+0$
+#69515850
+r6.951585000000001e-05 D%
+r3.541625000000083e-08 E%
+r2.833300000000067e-07 F%
+1#
+#69557515
+1$
+#69657515
+0#
+#69699180
+0$
+#69799180
+r6.979918e-05 D%
+r3.541624999999914e-08 E%
+r2.833299999999931e-07 F%
+1#
+#69840845
+1$
+#69940845
+0#
+#69982510
+0$
+#70082510
+r7.008251000000001e-05 D%
+r3.541625000000083e-08 E%
+r2.833300000000067e-07 F%
+1#
+#70124175
+1$
+#70224175
+0#
+#70265840
+0$
+#70365840
+r7.036584e-05 D%
+r3.541624999999914e-08 E%
+r2.833299999999931e-07 F%
+1#
+#70407505
+1$
+#70507505
+0#
+#70549170
+0$
+#70649170
+r7.064917000000001e-05 D%
+r3.541625000000083e-08 E%
+r2.833300000000067e-07 F%
+1#
+#70690835
+1$
+#70790835
+0#
+#70832500
+0$
+#70932500
+r7.09325e-05 D%
+r3.541624999999914e-08 E%
+r2.833299999999931e-07 F%
+1#
+#70974165
+1$
+#71074165
+0#
+#71115830
+0$
+#71215830
+r7.121583000000001e-05 D%
+r3.541625000000083e-08 E%
+r2.833300000000067e-07 F%
+1#
+#71257495
+1$
+#71357495
+0#
+#71399160
+0$
+#71499160
+r7.149916e-05 D%
+r3.541624999999914e-08 E%
+r2.833299999999931e-07 F%
+1#
+#71540825
+1$
+#71640825
+0#
+#71682490
+0$
+#71782490
+r7.178249000000001e-05 D%
+r3.541625000000083e-08 E%
+r2.833300000000067e-07 F%
+1#
+#71824155
+1$
+#71924155
+0#
+#71965820
+0$
+#72065820
+r7.206582e-05 D%
+r3.541624999999914e-08 E%
+r2.833299999999931e-07 F%
+1#
+#72107485
+1$
+#72207485
+0#
+#72249150
+0$
+#72349150
+r7.234915000000001e-05 D%
+r3.541625000000083e-08 E%
+r2.833300000000067e-07 F%
+1#
+#72390815
+1$
+#72490815
+0#
+#72532480
+0$
+#72632480
+r7.263248e-05 D%
+r3.541624999999914e-08 E%
+r2.833299999999931e-07 F%
+1#
+#72674145
+1$
+#72774145
+0#
+#72815810
+0$
+#72915810
+r7.291581e-05 D%
+r3.541625000000083e-08 E%
+r2.833300000000067e-07 F%
+1#
+#72957475
+1$
+#73057475
+0#
+#73099140
+0$
+#73199140
+r7.319914e-05 D%
+r3.541624999999914e-08 E%
+r2.833299999999931e-07 F%
+1#
+#73240805
+1$
+#73340805
+0#
+#73382470
+0$
+#73482470
+r7.348247e-05 D%
+r3.541625000000083e-08 E%
+r2.833300000000067e-07 F%
+1#
+#73524135
+1$
+#73624135
+0#
+#73665800
+0$
+#73765800
+r7.37658e-05 D%
+r3.541624999999914e-08 E%
+r2.833299999999931e-07 F%
+1#
+#73807465
+1$
+#73907465
+0#
+#73949130
+0$
+#74049130
+r7.404913e-05 D%
+r3.541625000000083e-08 E%
+r2.833300000000067e-07 F%
+1#
+#74090795
+1$
+#74190795
+0#
+#74232460
+0$
+#74332460
+r7.433246e-05 D%
+r3.541624999999914e-08 E%
+r2.833299999999931e-07 F%
+1#
+#74374125
+1$
+#74474125
+0#
+#74515790
+0$
+#74615790
+r7.461579e-05 D%
+r3.541625000000083e-08 E%
+r2.833300000000067e-07 F%
+1#
+#74657455
+1$
+#74757455
+0#
+#74799120
+0$
+#74899120
+r7.489912e-05 D%
+r3.541624999999914e-08 E%
+r2.833299999999931e-07 F%
+1#
+#74940785
+1$
+#75040785
+0#
+#75082450
+0$
+#75182450
+r7.518245e-05 D%
+r3.541625000000083e-08 E%
+r2.833300000000067e-07 F%
+1#
+#75224115
+1$
+#75324115
+0#
+#75365780
+0$
+#75465780
+r7.546578e-05 D%
+r3.541624999999914e-08 E%
+r2.833299999999931e-07 F%
+1#
+#75507445
+1$
+#75607445
+0#
+#75649110
+0$
+#75749110
+r7.574911e-05 D%
+r3.541625000000083e-08 E%
+r2.833300000000067e-07 F%
+1#
+#75790775
+1$
+#75890775
+0#
+#75932440
+0$
+#76032440
+r7.603244e-05 D%
+r3.541624999999914e-08 E%
+r2.833299999999931e-07 F%
+1#
+#76074105
+1$
+#76174105
+0#
+#76215770
+0$
+#76315770
+r7.631577e-05 D%
+r3.541625000000083e-08 E%
+r2.833300000000067e-07 F%
+1#
+#76357435
+1$
+#76457435
+0#
+#76499100
+0$
+#76599100
+r7.65991e-05 D%
+r3.541624999999914e-08 E%
+r2.833299999999931e-07 F%
+1#
+#76640765
+1$
+#76740765
+0#
+#76782430
+0$
+#76882430
+r7.688243e-05 D%
+r3.541625000000083e-08 E%
+r2.833300000000067e-07 F%
+1#
+#76924095
+1$
+#77024095
+0#
+#77065760
+0$
+#77165760
+r7.716576e-05 D%
+r3.541624999999914e-08 E%
+r2.833299999999931e-07 F%
+1#
+#77207425
+1$
+#77307425
+0#
+#77349090
+0$
+#77449090
+r7.744909e-05 D%
+r3.541625000000083e-08 E%
+r2.833300000000067e-07 F%
+1#
+#77490755
+1$
+#77590755
+0#
+#77632420
+0$
+#77732420
+r7.773242e-05 D%
+r3.541624999999914e-08 E%
+r2.833299999999931e-07 F%
+1#
+#77774085
+1$
+#77874085
+0#
+#77915750
+0$
+#78015750
+r7.801575e-05 D%
+r3.541625000000083e-08 E%
+r2.833300000000067e-07 F%
+1#
+#78057415
+1$
+#78157415
+0#
+#78199080
+0$
+#78299080
+r7.829908e-05 D%
+r3.541624999999914e-08 E%
+r2.833299999999931e-07 F%
+1#
+#78340745
+1$
+#78440745
+0#
+#78482410
+0$
+#78582410
+r7.858241e-05 D%
+r3.541625000000083e-08 E%
+r2.833300000000067e-07 F%
+1#
+#78624075
+1$
+#78724075
+0#
+#78765740
+0$
+#78865740
+r7.886574e-05 D%
+r3.541624999999914e-08 E%
+r2.833299999999931e-07 F%
+1#
+#78907405
+1$
+#79007405
+0#
+#79049070
+0$
+#79149070
+r7.914907e-05 D%
+r3.541625000000083e-08 E%
+r2.833300000000067e-07 F%
+1#
+#79190735
+1$
+#79290735
+0#
+#79332400
+0$
+#79432400
+r7.94324e-05 D%
+r3.541624999999914e-08 E%
+r2.833299999999931e-07 F%
+1#
+#79474065
+1$
+#79574065
+0#
+#79615730
+0$
+#79715730
+r7.971573e-05 D%
+r3.541625000000083e-08 E%
+r2.833300000000067e-07 F%
+1#
+#79757395
+1$
+#79857395
+0#
+#79899060
+0$
+#79999060
+r7.999905999999999e-05 D%
+r3.541624999999914e-08 E%
+r2.833299999999931e-07 F%
+1#
+#80040725
+1$
+#80140725
+0#
+#80182390
+0$
+#80282390
+r8.028239e-05 D%
+r3.541625000000083e-08 E%
+r2.833300000000067e-07 F%
+1#
+#80324055
+1$
+#80424055
+0#
+#80465720
+0$
+#80565720
+r8.056571999999999e-05 D%
+r3.541624999999914e-08 E%
+r2.833299999999931e-07 F%
+1#
+#80607385
+1$
+#80707385
+0#
+#80749050
+0$
+#80849050
+r8.084905e-05 D%
+r3.541625000000083e-08 E%
+r2.833300000000067e-07 F%
+1#
+#80890715
+1$
+#80990715
+0#
+#81032380
+0$
+#81132380
+r8.113237999999999e-05 D%
+r3.541624999999914e-08 E%
+r2.833299999999931e-07 F%
+1#
+#81174045
+1$
+#81274045
+0#
+#81315710
+0$
+#81415710
+r8.141571e-05 D%
+r3.541625000000083e-08 E%
+r2.833300000000067e-07 F%
+1#
+#81457375
+1$
+#81557375
+0#
+#81599040
+0$
+#81699040
+r8.169903999999999e-05 D%
+r3.541624999999914e-08 E%
+r2.833299999999931e-07 F%
+1#
+#81740705
+1$
+#81840705
+0#
+#81882370
+0$
+#81982370
+r8.198237e-05 D%
+r3.541625000000083e-08 E%
+r2.833300000000067e-07 F%
+1#
+#82024035
+1$
+#82124035
+0#
+#82165700
+0$
+#82265700
+r8.226569999999999e-05 D%
+r3.541624999999914e-08 E%
+r2.833299999999931e-07 F%
+1#
+#82307365
+1$
+#82407365
+0#
+#82449030
+0$
+#82549030
+r8.254903e-05 D%
+r3.541625000000083e-08 E%
+r2.833300000000067e-07 F%
+1#
+#82590695
+1$
+#82690695
+0#
+#82732360
+0$
+#82832360
+r8.283235999999999e-05 D%
+r3.541624999999914e-08 E%
+r2.833299999999931e-07 F%
+1#
+#82874025
+1$
+#82974025
+0#
+#83015690
+0$
+#83115690
+r8.311569e-05 D%
+r3.541625000000083e-08 E%
+r2.833300000000067e-07 F%
+1#
+#83157355
+1$
+#83257355
+0#
+#83299020
+0$
+#83399020
+r8.339901999999999e-05 D%
+r3.541624999999914e-08 E%
+r2.833299999999931e-07 F%
+1#
+#83440685
+1$
+#83540685
+0#
+#83582350
+0$
+#83682350
+r8.368235e-05 D%
+r3.541625000000083e-08 E%
+r2.833300000000067e-07 F%
+1#
+#83724015
+1$
+#83824015
+0#
+#83865680
+0$
+#83965680
+r8.396567999999999e-05 D%
+r3.541624999999914e-08 E%
+r2.833299999999931e-07 F%
+1#
+#84007345
+1$
+#84107345
+0#
+#84149010
+0$
+#84249010
+r8.424901e-05 D%
+r3.541625000000083e-08 E%
+r2.833300000000067e-07 F%
+1#
+#84290675
+1$
+#84390675
+0#
+#84432340
+0$
+#84532340
+r8.453234000000001e-05 D%
+1#
+#84574005
+1$
+#84674005
+0#
+#84715670
+0$
+#84815670
+r8.481567e-05 D%
+r3.541624999999914e-08 E%
+r2.833299999999931e-07 F%
+1#
+#84857335
+1$
+#84957335
+0#
+#84999000
+0$
