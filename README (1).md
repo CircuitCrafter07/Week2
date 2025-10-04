@@ -106,7 +106,7 @@ iverilog -o output/pre_synth_sim/pre_synth_sim.out -DPRE_SYNTH_SIM \
 cd output/pre_synth_sim
 ./pre_synth_sim.out
 ```
-![WhatsApp Image 2024-11-05 at 18 21 53](https://github.com/user-attachments/assets/71e2f05c-1688-4016-adf2-3ae8a874b18a)
+![WhatsApp Image 2024-11-05 at 18 21 53](https://github.com/CircuitCrafter07/Week2/blob/main/Screenshot%20from%202025-10-02%2018-44-31.png)
 
 
 **Explanation:**
